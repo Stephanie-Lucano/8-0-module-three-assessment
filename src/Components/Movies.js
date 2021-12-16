@@ -1,5 +1,5 @@
 import { Component } from "react";
-// import Film from "./Film";
+import Film from "./Film";
 
 class Movies extends Component {
   constructor() {
@@ -31,6 +31,11 @@ class Movies extends Component {
   }
   
   render() {
+    const filmData = () => {this.state.films.find((film) => {
+        return film.title === this.state.selectedFilm
+      })
+    }
+
     return (
       <div className="movies">
           <h1>Select a Movie</h1>
@@ -42,6 +47,7 @@ class Movies extends Component {
               )
             })}
           </select>
+          {this.state.selectedFilm !== "" && <Film data={filmData}/>}
       </div>
     );
   }
