@@ -5,6 +5,7 @@ import Home from "./Components/Home";
 import Movies from "./Components/Movies";
 import People from "./Components/People";
 import Locations from "./Components/Locations";
+import "./App.css"
 
 class App extends Component {
   render() {

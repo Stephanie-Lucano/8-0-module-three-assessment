@@ -1,10 +1,21 @@
 import { Component } from "react";
+import { Link } from 'react-router-dom';
+import logo from "../camera.png";
+import "./Navbar.css";
 
 class Navbar extends Component {
   render() {
     return (
       <div className="Navbar">
-          <h1>This is the navbar</h1>
+        <article>
+            <Link to="/">
+                <img src={logo} alt=""text />
+            </Link>
+        </article>
+        <Link to="/movies">Movies</Link>
+        <Link to="/people">People</Link>
+        <Link to="/locations">Locations</Link>
+        
       </div>
     );
   }
