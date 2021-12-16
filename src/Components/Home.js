@@ -4,7 +4,7 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-          <h1>This is the home page</h1>
+          <h1>Welcome to GhibliApp</h1>
       </div>
     );
   }
