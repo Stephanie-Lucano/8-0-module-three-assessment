@@ -9,7 +9,7 @@ import Locations from "./Components/Locations";
 class App extends Component {
   render() {
     return (
-      <div className="app">
+      <div className="App">
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
